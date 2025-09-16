@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EduLearn - Start Learning Today</title>
+    <meta name="description" content="An educational website to browse courses and start learning.">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      .hero {
+        background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+      }
+      .category-card {
+        transition: transform .15s ease, box-shadow .15s ease;
+      }
+      .category-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.08);
+      }
+      .course-card img { object-fit: cover; height: 140px; }
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">EduLearn</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+    <section class="hero py-5 py-lg-6">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1 class="display-5 fw-bold mb-3">Start Learning Today!</h1>
+            <p class="lead text-secondary mb-4">Discover high-quality online courses taught by industry experts. Learn at your own pace and level up your skills.</p>
+            <a href="#courses" class="btn btn-primary btn-lg">Browse Courses</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="py-5" id="categories">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between mb-4">
+          <h2 class="h3 m-0">Popular Categories</h2>
+        </div>
+        <div class="row g-4 row-cols-1 row-cols-md-3">
+          <div class="col">
+            <div class="card category-card h-100 shadow-sm">
+              <div class="card-body d-flex">
+                <div class="me-3 text-primary fs-1"><i class="bi bi-code-slash"></i></div>
+                <div>
+                  <h3 class="h5">Programming</h3>
+                  <p class="text-secondary mb-0">Learn Python, JavaScript, and more to build real-world applications.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card category-card h-100 shadow-sm">
+              <div class="card-body d-flex">
+                <div class="me-3 text-success fs-1"><i class="bi bi-graph-up-arrow"></i></div>
+                <div>
+                  <h3 class="h5">Data & Analytics</h3>
+                  <p class="text-secondary mb-0">Master data analysis, visualization, and machine learning fundamentals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card category-card h-100 shadow-sm">
+              <div class="card-body d-flex">
+                <div class="me-3 text-warning fs-1"><i class="bi bi-palette"></i></div>
+                <div>
+                  <h3 class="h5">Design</h3>
+                  <p class="text-secondary mb-0">Explore UI/UX, visual design, and create beautiful user experiences.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="py-5 bg-body-secondary" id="courses">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between mb-4">
+          <h2 class="h3 m-0">Featured Courses</h2>
+        </div>
+        <div class="row g-4 row-cols-1 row-cols-md-3">
+          <div class="col">
+            <div class="card course-card h-100 shadow-sm">
+              <img src="https://picsum.photos/seed/code/600/400" class="card-img-top" alt="Course cover: Web Development Basics">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Web Development Basics</h3>
+                <p class="text-secondary mb-2">Instructor: Mostafa Elelemy</p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-outline-primary w-100">Enroll</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card course-card h-100 shadow-sm">
+              <img src="https://picsum.photos/seed/data/600/400" class="card-img-top" alt="Course cover: Data Analysis with Python">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Data Analysis with Python</h3>
+                <p class="text-secondary mb-2">Instructor: Mostafa Elelemy</p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-outline-primary w-100">Enroll</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card course-card h-100 shadow-sm">
+              <img src="https://picsum.photos/seed/design/600/400" class="card-img-top" alt="Course cover: UX Design Fundamentals">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">UX Design Fundamentals</h3>
+                <p class="text-secondary mb-2">Instructor: Nada El-Sayed</p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-outline-primary w-100">Enroll</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="py-5" id="about">
+      <div class="container">
+        <h2 class="h3">About</h2>
+        <p class="text-secondary">EduLearn helps learners acquire in-demand skills through bite-sized, practical courses created by experienced instructors.</p>
+      </div>
+    </section>
+
+    <section class="py-5 border-top" id="contact">
+      <div class="container">
+        <h2 class="h5 mb-3">Contact</h2>
+        <p class="mb-0 text-secondary">Have questions? Email us at <a href="mailto:hello@example.com">mostelelemy@gmail.com</a>.</p>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-body-tertiary">
+      <div class="container d-flex justify-content-between small text-secondary">
+        <span>© <span id="year"></span> EduLearn</span>
+        <span>Learn. Build. Grow.</span>
+      </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
+
